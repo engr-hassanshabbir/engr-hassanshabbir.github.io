@@ -166,7 +166,7 @@
   var photoTargets = $$('[data-photo]');
   function loadOwnPhotos() {
     photoTargets.forEach(function (el) {
-      var src = 'photos/' + el.getAttribute('data-photo') + '.jpg';
+      var src = el.getAttribute('data-photo') + '.jpg';
       probe(src, function (ok) {
         if (!ok) return;
         var area = $('.photo', el);
